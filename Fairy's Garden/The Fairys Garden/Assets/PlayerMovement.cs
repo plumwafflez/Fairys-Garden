@@ -7,19 +7,20 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-   /* public CharacterController controller;
+    public CharacterController controller;
 
     [Header("Movement Settings")]
     public float speed = 6f;                // movement speed
     public float turnSmoothTime = 0.1f;     // smoothness of turning
     float turnSmoothVelocity;
+    public Transform PlayerTransform;
 
     [Header("Camera Reference")]
     public Transform cam;                   // drag Main Camera (with Cinemachine Brain) here
 
     [Header("Gravity")]
     public float gravity = -9.81f;
-    public float groundDistance = 0.4f;
+    public float groundDistance = 1f;
     public LayerMask groundMask;
     public Transform groundCheck;
 
@@ -57,8 +58,10 @@ public class PlayerMovement : MonoBehaviour
         // gravity
         velocity.y += gravity * Time.deltaTime;
         controller.Move(velocity * Time.deltaTime);
+
+      
     }
-   */
+   
 
     //I tried really hard to even just get the movement working and it did not in fact work, the cinemachine cameras are hard LOL
     //But I got this code using AI and it caused the Playerobject to shake a ton, need to fix it somehow. Project made!
